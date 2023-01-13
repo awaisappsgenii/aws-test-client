@@ -8,7 +8,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('api').then(data => { setUsers(data.data)} )
+    axios.get(process.env.REACT_APP_API_ENDPOINT).then(data => { setUsers(data.data)} )
   }, []);
   
   return (
@@ -16,7 +16,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {
-          users.map(user => <p>{user.name}</p>)
+          users.map((user,index) => <p key={index}>{user.name}</p>)
         }
       </header>
     </div>
