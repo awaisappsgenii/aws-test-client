@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -14,7 +14,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello World</p>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {
           users.map((user,index) => <p key={index}>{user.name}</p>)
         }
