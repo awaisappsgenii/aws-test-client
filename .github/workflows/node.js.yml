@@ -27,4 +27,4 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: pm2 restart cicd-frontend
-    - run: sudo cp /home/ubuntu/client/.env /home/ubuntu/cicd-frontend/_work/aws-client-test/aws-client-test/.env
+    - run: sudo cp /home/ubuntu/client/.env /home/ubuntu/cicd-frontend/_work/aws-test-client/aws-test-client/.env
