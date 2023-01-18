@@ -15,7 +15,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Hello World</p>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {
           users.map((user,index) => <p key={index}>{user.name}</p>)
         }
