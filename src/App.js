@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello World</p>
+        <p>Hello</p>
         {
           users.map((user,index) => <p key={index}>{user.name}</p>)
         }
